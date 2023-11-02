@@ -1,7 +1,13 @@
-import nmap3
-import argparse
-import socket
-from prettytable import PrettyTable
+from os import system
+
+try:
+     import nmap3
+     import argparse
+     import socket
+     from prettytable import PrettyTable
+except ModuleNotFoundError:
+      print('installing library...')
+     system('python3 -m pip install -r requirements.txt')
 
 class PortScanner:
 
