@@ -1,19 +1,28 @@
 # pynetScanner
-sudo python3 pynetScanner.py -t <target> -type <type scanner>
+Digunakan untuk Scanning Port pada jaringan menggunakan bahasa pemrograman python3 dan library :
 
-params -t    : host
+- nmap3
+- prettytable
+- socket
+- argparse
 
-params -type : 
-        
-        od => os detection
-        
-        tp => top ports
-        
-        de => dns enumeration
-        
+Langkah Untuk Menginstall 
 
-example
-     sudo python3 pynetScanner.py -t blabla.com -type od
-     
+kloning repository :    
+ 
+         git clone https://github.com/haku18-c/pynetScanner
+
+Masuk ke directory :
+
+         cd pynetScanner
+
+Install requirements
+
+         python3 -m pip install requirements
+
+Jalankan menggunakan akses root/administrator
+
+         sudo python3 pynetScanner.py -t <target> -type od
+        
      
      
